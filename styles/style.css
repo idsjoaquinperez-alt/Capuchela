@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Diseño de header */
+
+header {
+    background-color: #1b1b1b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav a
+{
+    text-decoration: none;
+    color: #ffca15;
+    font-family: "Sansita", sans-serif;
+    font-weight: 700;
+    font-style: norma
+
+}
+
+.menudenavegacion ul {
+    font-size: x-large;
+    list-style: none;
+    display: flex;
+    margin-right: 30px;
+    gap: 30px;
+
+}
+
+/* Diseño body */
+
+body 
+{
+    background-color: #ffe793;
+}
+
+h2{
+color: #1b1b1b;   font-family: "Sansita", sans-serif;
+  font-weight: 700;
+  font-style: norma
+}
+
+hr {
+  width: 80%;         
+  margin: 40px auto;   
+  border: none;        
+  border-top: 2px solid #1b1b1b;
+}
+
+h3 {
+     font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Diseño BIENVENIDA */
+
+.bienvenida {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.bienvenida p {
+    margin-top: 10px;
+}
+
+button {
+    background-color: #1b1b1b;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+}
+a button {
+    color: #ffe793;
+    font-family: "Sansita", sans-serif;
+  font-weight: 700;
+  font-style: norma
+}
+
+p {
+    font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style:oblique
+}
+
+
+/* Diseño CONOCENOS */
+
+.pasado {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;   
+    align-items: center;
+    
+}
+
+/* Diseño del footer*/
+
+footer {
+    background-color: #1b1b1b;
+    align-items: center;
+  
+   
+}
+
+.menufooter ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+
+}
