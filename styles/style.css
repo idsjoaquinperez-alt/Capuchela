@@ -111,6 +111,18 @@ a button {
   font-style:oblique
 }
 
+@media (max-width: 768px) {
+    .bienvenida {
+        text-align: center;
+    }
+
+    .bienvenida p {
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+
 /* Diseño ESTILOS - INICIO*/
 
 .titulo-estilos {
