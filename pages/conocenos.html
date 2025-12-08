@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap--> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
      <!-- CSS--> 
     <link rel="stylesheet" href="../styles/style.css">
@@ -17,74 +19,108 @@
 </head>
 
 <body>
-    <!-- Contenido del encabezado del sitio. Se retipe en todos los html -->
-    <header>
-<img src="../assets/capuchelalogo.jpeg" alt="capuchelalogo" height="100">
-    <nav class="menudenavegacion"> 
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="#">Conocenos</a></li>
-            <li><a href="./estilos.html">Estilos</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <Li><a href="./contacto.html">Contacto</a></Li>
-        </ul>
-    </nav>
-    </header>
+    <!-- Contenido del encabezado del sitio. Se repite en todos los html -->
+<nav class="navbar navbar-expand-lg navbar-header sticky-top">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="../index.html">
+      <img src="../assets/capuchelalogo.png" alt="capuchelalogo" height="50">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link ms-4" href="../index.html">Inicio</a>
+        <a class="nav-link ms-4" href="#">Conocenos</a>
+        <a class="nav-link ms-4" href="./estilos.html">Estilos</a>
+        <a class="nav-link ms-4" href="./blog.html">Blog</a>
+        <a class="nav-link ms-4" href="./contacto.html">Contacto</a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
 
      <!-- Contenido principal de CONOCENOS -->
-    <main>
+<main>
 
-<div class="pasado">
-<h2>PASADO</h2>
-<p>Todo nació de una locura entre amigos durante la pandemia. 
-    Nuestro primer equipo era un caos, y solo logramos hacer tandas de 5 litros. 
-    Pero esa pequeña escala nos permitió obsesionarnos con el detalle, la disciplina y el proceso. 
-    Lo que empezó como un hobby para matar el tiempo, se convirtió en nuestra misión: 
-    demostrar que la mejor cerveza es la que se hace con el corazón.</p>
-    <img src="../assets/pasado.png" alt="pasado" width="30%">
-</div>
+<section class="bloque pasado">
+    <h2>PASADO</h2>
+    <p class="conocenos-texto">Todo nació de una locura entre amigos durante la pandemia. 
+        Nuestro primer equipo era un caos, y solo logramos hacer tandas de 5 litros. 
+        Pero esa pequeña escala nos permitió obsesionarnos con el detalle, la disciplina y el proceso. 
+        Lo que empezó como un hobby para matar el tiempo, se convirtió en nuestra misión: 
+        demostrar que la mejor cerveza es la que se hace con el corazón.</p>
+    <img src="../assets/pasado.png" alt="pasado">
+</section>
 
-
-    <h2>PRESENTE</h2>
-    <p>Ya no somos solo "los amigos que hacen cerveza". 
+<section class="bloque presente">
+    <img src="../assets/presente.png" alt="presente">
+    <p class="conocenos-texto" id="presente-texto">Ya no somos solo "los amigos que hacen cerveza". 
         Hoy, somos cerveceros serios, y aunque crecimos a batches de 20 litros, 
         mantenemos ese espíritu artesanal inicial. Esta escala reducida nos permite 
         estar en constante formación y nunca dejar de probar nuevas recetas y variaciones. 
         El resultado: una cerveza que siempre está mejorando, 
         porque nos obsesiona la calidad y el sabor.</p>
-        <img src="../assets/presente.png" alt="presente" width="30%">
+    <h2>PRESENTE</h2>
+</section>
 
-<h2>FUTURO</h2>
-<p>
-    No nos conformamos con lo clásico. Miramos hacia adelante con sed de aventura. 
-    Queremos explorar cada rincón del mapa cervecero: experimentar con nuevos lúpulos, 
-    atrevernos con estilos inesperados e innovar constantemente. 
-    Nuestro compromiso es simple: seguir creando cervezas que sorprendan y
-     que nos den ganas de compartir con ustedes. ¡Prepárense para las próximas 
-     locuras que salgan de nuestros pequeños batches!
-</p>
-<img src="../assets/futuro.png" alt="futuro" width="30%">
+<section class="bloque futuro">
+    <h2>FUTURO</h2>
+    <p class="conocenos-texto">No nos conformamos con lo clásico. Miramos hacia adelante con sed de aventura. 
+        Queremos explorar cada rincón del mapa cervecero: experimentar con nuevos lúpulos, 
+        atrevernos con estilos inesperados e innovar constantemente. 
+        Nuestro compromiso es simple: seguir creando cervezas que sorprendan y
+         que nos den ganas de compartir con ustedes. ¡Prepárense para las próximas 
+         locuras que salgan de nuestros pequeños batches!</p>
+    <img src="../assets/futuro.png" alt="futuro">
+</section>
+
+</main>
 
 
-    </main>
+<!-- Continido del pie de página. Se repite en todas las páginas del sitio -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-logo">
+      <a href="/">
+        <img src="../assets/capuchelalogo.png" alt="Capuchela Logo" height="60">
+      </a>
+    </div>
 
-    <!-- Continido del pie de página. Se repite en todas las páginas del sitio -->
-<footer>
-    <nav class="menufooter"> 
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="#">Conocenos</a></li>
-            <li><a href="./estilos.html">Estilos</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <Li><a href="./contacto.html">Contacto</a></Li>
-        </ul>
+    <nav class="footer-nav">
+      <a href="../index.html">Inicio</a>
+      <a href="#">Conocenos</a>
+      <a href="./estilos.html">Estilos</a>
+      <a href="./blog.html">Blog</a>
+      <a href="./contacto.html">Contacto</a>
     </nav>
 
-    <img src="../assets/capuchelalogo.jpeg" alt="capuchelalogo" width="5%">
-    <img src="../assets/instalogo.png" alt="instagram" width="2%">
-    <img src="../assets/wtslogo.png" alt="whatsapp" width="2%">
-    <img src="../assets/mailogo.png" alt="mail" width="2%">
+    <div class="footer-social">
+    <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+    <a href="https://wa.me/"><ion-icon name="logo-whatsapp"></ion-icon></a>
+    <a href="./contacto.html"><ion-icon name="mail-outline"></ion-icon></a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 Capuchela. Todos los derechos reservados.
+  </div>
 </footer>
+
+
+
+        <!-- ÍCONOS PARA SOCIAL MEDIA -->
+       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 </body>
  

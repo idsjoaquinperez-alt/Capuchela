@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap--> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
      <!-- CSS--> 
     <link rel="stylesheet" href="../styles/style.css">
@@ -14,86 +17,142 @@
 
     <title>Capuchela - Estilos</title>
 </head>
-<body>
-    <!-- Contenido del encabezado del sitio. Se retipe en todos los html -->
-    <header>
-    <img src="../assets/capuchelalogo.jpeg" alt="capuchelalogo" height="100">
-    <nav class="menudenavegacion"> 
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./conocenos.html">Conocenos</a></li>
-            <li><a href="#">Estilos</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <Li><a href="./contacto.html">Contacto</a></Li>
-        </ul>
-    </nav>
-    </header>
+    <body>
+        <!-- Contenido del encabezado del sitio. Se repite en todos los html -->
+        <nav class="navbar navbar-expand-lg navbar-header sticky-top">
+        <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">
+        <img src="../assets/capuchelalogo.png" alt="capuchelalogo" height="50">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+            <a class="nav-link ms-4" href="../index.html">Inicio</a>
+            <a class="nav-link ms-4" href="./conocenos.html">Conocenos</a>
+            <a class="nav-link ms-4" href="#">Estilos</a>
+            <a class="nav-link ms-4" href="./blog.html">Blog</a>
+            <a class="nav-link ms-4" href="./contacto.html">Contacto</a>
+        </div>
+        </div>
+
+        </div>
+        </nav>
+
 
 
          <!-- Contenido principal de ESTILOS -->
-    <main>
-<h2>ESTILOS</h2>
 
-<h3>Dubbel</h3>
-<p>Este estilo honra la tradición de las cervezas de Abadía. 
-    Es una cerveza de color cobre profundo y gran cuerpo, 
-    donde la estrella es la malta rica y el azúcar candi, 
-    que aportan un perfil intenso a caramelo, higos, pasas y pan tostado. 
-    La levadura belga añade sutiles notas especiadas, pero el foco es la calidez 
-    y la dulzura de la malta. Es una bebida para ser contemplada y disfrutada con serenidad.</p>
-<img src="../assets/dubbel.png" alt="dubbel" width="20%">
+        <main class="estilos">
 
-<h3>Tripel</h3>
-<p>
-    La cúspide de la tradición belga, una cerveza poderosa que engaña con 
-    su color dorado pálido. Es notablemente compleja a pesar de su apariencia clara: 
-    su alta graduación alcohólica está perfectamente camuflada por un abanico de sabores 
-    frutales (pera, manzana, cítricos) y especiados (pimienta blanca, clavo) provenientes 
-    exclusivamente de la levadura de Abadía. El proceso de elaboración es paciente y requiere 
-    una gran destreza para lograr su cuerpo pleno y su final seco. Es una cerveza de contemplación.
-</p>
-<img src="../assets/trippel.png" alt="TRIPEL" width="20%">
+            <h1>Estilos</h1>
 
-<h3>Session IPA</h3>
-<p>
-Representa la maestría de concentrar un sabor impactante en una cerveza ligera. 
-Es una versión de la India Pale Ale con un aroma vibrante y explosivo a cítricos 
-y frutas tropicales, pero manteniendo una baja graduación alcohólica. Perfecta 
-para un consumo prolongado y sin sacrificar la complejidad. Es nuestra bebida más 
-accesible, manteniendo la calidad en cada gota.
-</p>
+            <!-- DUBBEL -->
+            <section class="estilo-card">
+                <img src="../assets/dubbel.png" alt="Dubbel">
+                <div class="texto">
+                    <h3>Dubbel</h3>
+                    <p>
+                    Este estilo honra la tradición de las cervezas de Abadía. 
+                    Es una cerveza de color cobre profundo y gran cuerpo, 
+                    donde la estrella es la malta rica y el azúcar candi, 
+                    que aportan un perfil intenso a caramelo, higos, pasas y pan tostado. 
+                    La levadura belga añade sutiles notas especiadas, pero el foco es la calidez 
+                    y la dulzura de la malta. Es una bebida para ser contemplada con serenidad.
+                     </p>
+                </div>
+            </section>
 
-<img src="../assets/session ipa.png" alt="SESSION IPA" width="20%">
+                <!-- TRIPEL -->
+            <section class="estilo-card">
+                <img src="../assets/trippel.png" alt="Tripel">
+                <div class="texto">
+                    <h3>Tripel</h3>
+                    <p>
+                    La cúspide de la tradición belga: una cerveza poderosa que 
+                    engaña con su color dorado pálido. Compleja y elegante, combina sabores 
+                    frutales (pera, manzana, cítricos) y especiados como pimienta blanca y clavo, 
+                    provenientes exclusivamente de la levadura de Abadía. Su final seco 
+                    y su cuerpo pleno la convierten en una cerveza de contemplación.
+                    </p>
+                </div>
+            </section>
 
-<h3>Stout</h3>
-<p>
-Si bien no es un estilo monástico tradicional, nuestra Stout 
-comparte la disciplina en el proceso. Es una cerveza oscura, casi opaca, 
-y robusta. El uso de maltas fuertemente tostadas domina el paladar con sabores 
-francos a café espresso y cacao amargo, con un final seco y refrescante que invita 
-al siguiente sorbo. Un perfil honesto y sin adornos.  
-</p>
-<img src="../assets/stout.png" alt="STOUT" width="20%">
-    </main>
+                <!-- SESSION IPA -->
+            <section class="estilo-card">
+                <img src="../assets/session ipa.png" alt="Session IPA">
+                <div class="texto">
+                    <h3>Session IPA</h3>
+                    <p>
+                    Representa la maestría de concentrar un sabor impactante en una cerveza ligera. 
+                    Con aroma vibrante a cítricos y frutas tropicales, combina intensidad con 
+                    baja graduación alcohólica. Perfecta para un consumo prolongado sin sacrificar 
+                    complejidad. Es nuestra cerveza más accesible, manteniendo calidad en cada gota.
+                    </p>
+                </div>
+            </section>
+
+        <!-- STOUT -->
+        <section class="estilo-card">
+            <img src="../assets/stout.png" alt="Stout">
+            <div class="texto">
+                <h3>Stout</h3>
+                <p>
+                    Aunque no es un estilo monástico, nuestra Stout comparte dedicación y precisión. 
+                    Una cerveza oscura, robusta y casi opaca, dominada por maltas tostadas que 
+                    evocan café espresso y cacao amargo. El final seco invita al siguiente sorbo: 
+                    un perfil honesto y directo.
+                </p>
+            </div>
+        </section>
+
+        </main>
 
 
-    <!-- Continido del pie de página. Se repite en todas las páginas del sitio -->
-<footer>
-    <nav class="menufooter"> 
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./conocenos.html">Conocenos</a></li>
-            <li><a href="#">Estilos</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <Li><a href="./contacto.html">Contacto</a></Li>
-        </ul>
-    </nav>
 
-    <img src="../assets/capuchelalogo.jpeg" alt="capuchelalogo" width="5%">
-    <img src="../assets/instalogo.png" alt="instagram" width="2%">
-    <img src="../assets/wtslogo.png" alt="whatsapp" width="2%">
-    <img src="../assets/mailogo.png" alt="mail" width="2%">
-</footer>
 
-</body>
+                <!-- Continido del pie de página. Se repite en todas las páginas del sitio -->
+            <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+            <a href="../index.html">
+                <img src="../assets/capuchelalogo.png" alt="Capuchela Logo" height="60">
+            </a>
+            </div>
+
+            <nav class="footer-nav">
+            <a href="../index.html">Inicio</a>
+            <a href="./conocenos.html">Conocenos</a>
+            <a href="#">Estilos</a>
+            <a href="./blog.html">Blog</a>
+            <a href="./contacto.html">Contacto</a>
+            </nav>
+
+            <div class="footer-social">
+            <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://wa.me/"><ion-icon name="logo-whatsapp"></ion-icon></a>
+            <a href="./contacto.html"><ion-icon name="mail-outline"></ion-icon></a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2025 Capuchela. Todos los derechos reservados.
+        </div>
+            </footer>
+
+
+
+        <!-- ÍCONOS PARA SOCIAL MEDIA -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    </body>
 </html>

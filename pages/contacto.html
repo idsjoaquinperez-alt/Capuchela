@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap--> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
      <!-- CSS--> 
     <link rel="stylesheet" href="../styles/style.css">
@@ -16,67 +18,86 @@
 </head>
 
 <body>
-    <!-- Contenido del encabezado del sitio. Se retipe en todos los html -->
-    <header>
-        <img src="../assets/capuchelalogo.jpeg" alt="capuchelalogo" height="100">
-    <nav class="menudenavegacion"> 
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./conocenos.html">Conocenos</a></li>
-            <li><a href="./estilos.html">Estilos</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <Li><a href="#">Contacto</a></Li>
-        </ul>
-    </nav>
-    </header>
+     <!-- Contenido del encabezado del sitio. Se repite en todos los html -->
+<nav class="navbar navbar-expand-lg navbar-header sticky-top">
+  <div class="container-fluid">
 
+    <a class="navbar-brand" href="../index.html">
+      <img src="../assets/capuchelalogo.png" alt="capuchelalogo" height="50">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link ms-4" href="../index.html">Inicio</a>
+        <a class="nav-link ms-4" href="./conocenos.html">Conocenos</a>
+        <a class="nav-link ms-4" href="./estilos.html">Estilos</a>
+        <a class="nav-link ms-4" href="./blog.html">Blog</a>
+        <a class="nav-link ms-4" href="#">Contacto</a>
+      </div>
+    </div>
+
+  </div>
+</nav>
 
          <!-- Contenido principal de CONTACTO -->
     <main>
-        <h2>Contacto</h2>
+    
+        <h1 class="contacto-titulo">Contacto</h1>
+        <div class="contacto-borde"></div>
 
-    <form action="/submit" method="post">
-        <label for="nombre"> Nombre completo</label>
-        <input type="text" name="nombre" id="nombre">
-
-        <br>
-
-        <label for="mail"> Mail</label>
-        <input type="email" name="mail" id="mail">
-
-        <br>
-
-        <label for="telefono"> Teléfono</label>
-        <input type="number" name="telefono" id="telefono">
-
-        <br>
-
-        <label for="mensaje"> Mensaje</label>
-       <textarea name="mensaje" id="mensaje"></textarea>
-    </form>
-
+        <form class="contacto-form">
+            <input type="text" class="contacto-input" placeholder="Nombre">
+            <input type="email" class="contacto-input" placeholder="Email">
+            <input type="text" class="contacto-input" placeholder="Teléfono">
+            <textarea class="contacto-textarea" placeholder="Mensaje"></textarea>
+            <button type="submit" class="contacto-button">Enviar</button>
+        </form>
 
     </main>
 
 
-    <!-- Continido del pie de página. Se repite en todas las páginas del sitio -->
-<footer>
-    <nav class="menufooter"> 
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./conocenos.html">Conocenos</a></li>
-            <li><a href="./estilos.html">Estilos</a></li>
-            <li><a href="./blog.html">Blog</a></li>
-            <Li><a href="#">Contacto</a></Li>
-        </ul>
+<!-- Continido del pie de página. Se repite en todas las páginas del sitio -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-logo">
+      <a href="../index.html">
+        <img src="../assets/capuchelalogo.png" alt="Capuchela Logo" height="60">
+      </a>
+    </div>
+
+    <nav class="footer-nav">
+      <a href="../index.html">Inicio</a>
+      <a href="./conocenos.html">Conocenos</a>
+      <a href="./estilos.html">Estilos</a>
+      <a href="./blog.html">Blog</a>
+      <a href="#">Contacto</a>
     </nav>
 
-    <img src="../assets/capuchelalogo.jpeg" alt="capuchelalogo" width="5%">
-    <img src="../assets/instalogo.png" alt="instagram" width="2%">
-    <img src="../assets/wtslogo.png" alt="whatsapp" width="2%">
-    <img src="../assets/mailogo.png" alt="mail" width="2%">
+    <div class="footer-social">
+    <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+    <a href="https://wa.me/"><ion-icon name="logo-whatsapp"></ion-icon></a>
+    <a href="#"><ion-icon name="mail-outline"></ion-icon></a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 Capuchela. Todos los derechos reservados.
+  </div>
 </footer>
 
+
+
+        <!-- ÍCONOS PARA SOCIAL MEDIA -->
+       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 
 </html>

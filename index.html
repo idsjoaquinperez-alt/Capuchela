@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Bootstrap--> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
    <!-- CSS--> 
     <link rel="stylesheet" href="./styles/style.css">
@@ -15,19 +17,32 @@
     <title>Capuchela Inicio</title>
 </head>
 <body>
-    <!-- Contenido del encabezado del sitio. Se retipe en todos los html -->
-    <header>
-    <img src="./assets/capuchelalogo.jpeg" alt="capuchelalogo" height="100">
-    <nav class="menudenavegacion"> 
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="./pages/conocenos.html">Conocenos</a></li>
-            <li><a href="./pages/estilos.html">Estilos</a></li>
-            <li><a href="./pages/blog.html">Blog</a></li>
-            <Li><a href="./pages/contacto.html">Contacto</a></Li>
-        </ul>
-    </nav>
-    </header>
+    <!-- Contenido del encabezado del sitio. Se repite en todos los html -->
+<nav class="navbar navbar-expand-lg navbar-header sticky-top">
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="#">
+      <img src="./assets/capuchelalogo.png" alt="capuchelalogo" height="50">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto">
+        <a class="nav-link ms-4" href="#">Inicio</a>
+        <a class="nav-link ms-4" href="./pages/conocenos.html">Conocenos</a>
+        <a class="nav-link ms-4" href="./pages/estilos.html">Estilos</a>
+        <a class="nav-link ms-4" href="./pages/blog.html">Blog</a>
+        <a class="nav-link ms-4" href="./pages/contacto.html">Contacto</a>
+      </div>
+    </div>
+
+  </div>
+</nav>
 
 
     <!-- Contenido único de la página index -->
@@ -35,76 +50,141 @@
 
      <!-- Sección de bienvenida -->
     <section class="bienvenida">
-    <h2>Tadición de abadía</h2>
-    <p>"Respeto a la tradición. Cada lote pequeño, una búsqueda de la perfección."</p>
+    <h2>Tradición de abadía</h2>
+    <p class="p-bienvenida">"Respeto a la tradición. Cada lote pequeño, una búsqueda de la perfección."</p>
     <a href="./pages/conocenos.html"> 
     <button>Conocenos</button>
     </a>
 
     </section>
 
-    <hr>
 
      <!-- Sección de Estilos -->
-    <section>
-    <h2>Estilos <link rel="stylesheet" href="./pages/estilos.html"></h2>
-    <img src="./assets/dubbel.png" alt="dubbel" width= 25% >
-    <img src="./assets/trippel.png" alt="trippel"  width=25%>
-    <img src="./assets/session ipa.png" alt="session ipa" width=25%>
-    </section>
 
-    <hr>
+
+<h1 class="titulo-estilos">Estilos</h1>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./assets/CERVEZAS/DUBBEL.png" class="d-block w-100" alt="dubbel">
+        </div>
+        <div class="carousel-item">
+            <img src="./assets/CERVEZAS/TRIPEL.png" class="d-block w-100" alt="tripel">
+        </div>
+        <div class="carousel-item">
+            <img src="./assets/CERVEZAS/SESSIONIPA.png" class="d-block w-100" alt="session ipa">
+        </div>
+        <div class="carousel-item">
+            <img src="./assets/CERVEZAS/STOUT.png" class="d-block w-100" alt="stout">
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+</div>
+
 
      <!-- Sección de Blog -->
-    <section>
-    <h2>Blog</h2>
-    <div>
-    <h3>20/09/25</h3>
-    <h3>El Secreto de la Tripel: ¿Tan Fuerte y Tan Ligera?</h3>
-    <img src="./assets/blogtripel.jpg" alt="blogtripel" width="200">
+<section class="blog">
+  <h1 class="titulo-blog">Blog</h1>
+
+  <div class="cards-blog">
+    
+    <!--    Primera Card -->
+    <div class="card" style="width: 18rem;">
+      <img src="./assets/blogtripel.jpg" class="card-img-top" alt="blogtripel">
+      <div class="card-body">
+        <h6>20/09/25</h6>
+        <h5 class="card-title">El Secreto de la Tripel: ¿Tan Fuerte y Tan Ligera?</h5>
+        <a href="./pages/blog.html" class="btn btn-primary">Leer más</a>
+      </div>
     </div>
 
-    <div>
-    <h3>01/10/25</h3>
-    <h3>¡De 5 a 20 Litros! Nuestro Compromiso con el Batch Pequeño</h3>
-    <img src="./assets/blogbaches.jpg" alt="blogbaches"  width="200">
+    <!-- CARD 2 -->
+    <div class="card" style="width: 18rem;">
+      <img src="./assets/blogbaches.jpg" class="card-img-top" alt="blogbaches">
+      <div class="card-body">
+        <h6>01/10/25</h6>
+        <h5 class="card-title">¡De 5 a 20 Litros! Nuestro Compromiso con el Batch Pequeño</h5>
+        <a href="./pages/blog.html" class="btn btn-primary">Leer más</a>
+      </div>
     </div>
 
-    <div>
-    <h3>15/10/25</h3>
-    <h3>Stout: La Nobleza del Tostado y la Levadura</h3>
-    <img src="./assets/blogstout.jpg" alt="blogstout" width="200">
+    <!-- CARD 3 -->
+    <div class="card" style="width: 18rem;">
+      <img src="./assets/blogstout.jpg" class="card-img-top" alt="blogstout">
+      <div class="card-body">
+        <h6>15/10/25</h6>
+        <h5 class="card-title">Stout: La Nobleza del Tostado y la Levadura</h5>
+        <a href="./pages/blog.html" class="btn btn-primary">Leer más</a>
+      </div>
     </div>
 
-    <div>
-    <h3>01/11/25</h3>
-    <h3>Uruguay y la Revolución Artesanal: Un País que Sabe de Cerveza</h3>
-    <img src="./assets/bloguy.jpeg" alt="bloguy" width="200">
+    <!-- CARD 4 -->
+    <div class="card" style="width: 18rem;">
+      <img src="./assets/bloguy.jpeg" class="card-img-top" alt="bloguy">
+      <div class="card-body">
+        <h6>01/11/25</h6>
+        <h5 class="card-title">Uruguay y la Revolución Artesanal: Un País que Sabe de Cerveza</h5>
+        <a href="./pages/blog.html" class="btn btn-primary">Leer más</a>
+      </div>
     </div>
-    </section>
 
-
+  </div>
+</section>
 
 </main>
 
 <!-- Continido del pie de página. Se repite en todas las páginas del sitio -->
-<footer>
-    <nav class="menufooter"> 
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="./pages/conocenos.html">Conocenos</a></li>
-            <li><a href="./pages/estilos.html">Estilos</a></li>
-            <li><a href="./pages/blog.html">Blog</a></li>
-            <Li><a href="./pages/contacto.html">Contacto</a></Li>
-        </ul>
-    </nav>
-    
-<br>
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-logo">
+      <a href="/">
+        <img src="./assets/capuchelalogo.png" alt="Capuchela Logo" height="60">
+      </a>
+    </div>
 
-    <img src="./assets/capuchelalogo.jpeg" alt="capuchelalogo" width="5%">
-    <img src="./assets/instalogo.png" alt="instagram" width="2%">
-    <img src="./assets/wtslogo.png" alt="whatsapp" width="2%">
-    <img src="./assets/mailogo.png" alt="mail" width="2%">
+    <nav class="footer-nav">
+      <a href="#">Inicio</a>
+      <a href="./pages/conocenos.html">Conocenos</a>
+      <a href="./pages/estilos.html">Estilos</a>
+      <a href="./pages/blog.html">Blog</a>
+      <a href="./pages/contacto.html">Contacto</a>
+    </nav>
+
+    <div class="footer-social">
+    <a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+    <a href="https://wa.me/"><ion-icon name="logo-whatsapp"></ion-icon></a>
+    <a href="./pages/contacto.html"><ion-icon name="mail-outline"></ion-icon></a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2025 Capuchela. Todos los derechos reservados.
+  </div>
 </footer>
-</body>
+
+
+
+        <!-- ÍCONOS PARA SOCIAL MEDIA -->
+       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
 </html>
