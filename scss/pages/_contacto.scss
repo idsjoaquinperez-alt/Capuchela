@@ -1,0 +1,55 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.contacto-titulo {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 2rem;
+  color: v.$color-negro;
+}
+
+.contacto-borde {
+  width: 100px;
+  height: 4px;
+  background: v.$color-negro;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.contacto-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 30px 100px;
+}
+
+.contacto-input,
+.contacto-textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+
+  &:focus {
+    outline: none;
+    border-color: v.$color-negro;
+  }
+}
+
+.contacto-button {
+  background: v.$color-negro;
+  color: v.$color-amarillo-claro;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+
+  &:hover {
+    background: v.$color-amarillo-oscuro;
+    color: v.$color-negro;
+  }
+}
+
+@include m.small {
+  .contacto-form {
+    margin: 15px;
+  }
+}

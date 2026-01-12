@@ -1,0 +1,28 @@
+@use "../utilities/variables" as v;
+
+.footer {
+  margin-top: 60px;
+  background-color: v.$color-negro;
+  color: #eee;
+  padding: 1.5rem 1rem;
+
+  a {
+    color: v.$color-amarillo;
+    text-decoration: none;
+  }
+
+  &-social {
+    display: flex;
+    gap: 1rem;
+
+    ion-icon {
+      color: v.$color-amarillo;
+      font-size: 2rem;
+
+      &:hover {
+        color: v.$color-amarillo-claro;
+        transform: translateY(-10px);
+      }
+    }
+  }
+}

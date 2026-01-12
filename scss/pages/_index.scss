@@ -1,0 +1,47 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.bienvenida {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  @include m.mobile {
+    text-align: center;
+
+    p {
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+}
+
+button {
+  background-color: v.$color-negro;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+a button {
+  color: v.$color-amarillo-claro;
+  font-family: v.$font-sansita;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.p-bienvenida {
+  font-family: v.$font-raleway;
+  font-weight: 500;
+  font-style: oblique;
+}

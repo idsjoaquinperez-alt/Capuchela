@@ -1,0 +1,36 @@
+@use "../utilities/variables" as v;
+
+.navbar-header {
+  background-color: v.$color-negro;
+
+  .navbar-nav {
+    a {
+      text-decoration: none;
+      color: v.$color-amarillo;
+      font-family: v.$font-sansita;
+      font-weight: 700;
+      font-style: normal;
+      font-size: x-large;
+
+      &:hover {
+        color: v.$color-amarillo-claro;
+      }
+
+      &.active,
+      &.show,
+      &:focus,
+      &:active {
+        color: #ce9e01;
+      }
+    }
+  }
+}
+
+.navbar-toggler {
+  border-color: v.$color-amarillo;
+  background-color: v.$color-negro;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23f1c40f' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}

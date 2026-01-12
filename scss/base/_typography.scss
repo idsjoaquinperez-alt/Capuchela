@@ -1,0 +1,23 @@
+@use "../utilities/variables" as v;
+
+body {
+  background-color: v.$color-amarillo-claro;
+}
+
+h1 {
+  color: v.$color-negro;
+  font-family: v.$font-sansita;
+  font-weight: 800;
+  font-style: italic;
+}
+
+h2 {
+  color: v.$color-negro;
+  font-family: v.$font-sansita;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: v.$font-roboto;
+  font-weight: 500;
+}
