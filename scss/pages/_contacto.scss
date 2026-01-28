@@ -1,6 +1,7 @@
 @use "../utilities/variables" as v;
 @use "../utilities/mixins" as m;
 
+/* PÁGINA DE CONTACTO */
 .contacto-titulo {
   text-align: center;
   margin-top: 30px;
@@ -16,25 +17,31 @@
   border-radius: 2px;
 }
 
+/* Formulario */
 .contacto-form {
   display: flex;
   flex-direction: column;
+  /* Inputs uno debajo del otro */
   gap: 15px;
   margin: 30px 100px;
 }
 
+/* Campos de texto y área de mensaje */
 .contacto-input,
 .contacto-textarea {
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 6px;
 
+  /* Cuando haces clic en el campo */
   &:focus {
     outline: none;
     border-color: v.$color-negro;
+    /* Cambia color del borde */
   }
 }
 
+/* Botón de enviar */
 .contacto-button {
   background: v.$color-negro;
   color: v.$color-amarillo-claro;
@@ -48,6 +55,7 @@
   }
 }
 
+/* Ajuste para pantallas muy pequeñas */
 @include m.small {
   .contacto-form {
     margin: 15px;

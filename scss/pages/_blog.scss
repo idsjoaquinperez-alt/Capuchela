@@ -12,9 +12,12 @@
   &::after {
     content: "";
     flex-grow: 1;
+    max-width: 80%;
+    /* Evita que la línea llegue hasta el final */
     height: 2px;
     background-color: #000;
     margin-left: 0.5em;
+    align-self: center;
   }
 }
 
@@ -31,17 +34,31 @@
   color: v.$color-blanco;
   border: none;
   border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  }
 
   h5,
   h6 {
     color: v.$color-blanco;
     font-family: v.$font-sansita;
     font-weight: 700;
+    margin: 0;
+    /* Eliminar márgenes predeterminados para controlar mejor el espaciado con flex */
   }
 
   .btn {
     background-color: #d4a017;
     border: none;
+    margin-top: auto;
+    /* Empuja contra el margen superior automático del h6 para centrar el bloque de texto */
+    width: 100%;
+    align-self: flex-start;
+    /* Alineación al inicio */
 
     &:hover {
       background-color: v.$color-amarillo-oscuro;
@@ -52,10 +69,23 @@
 .card-body {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  /* Comenzar desde arriba, usar márgenes para el espaciado */
+  align-items: flex-start;
+  height: 100%;
+  padding: 1.5rem;
 
-  a.btn {
+  h6 {
     margin-top: auto;
+    /* Empuja el texto hacia abajo desde arriba */
   }
+
+  h5 {
+    /* Márgenes fijos para el título */
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
 }
 
 /* PÁGINA BLOG */
@@ -87,6 +117,8 @@
 
 .blog-img {
   width: 250px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   border: 3px solid v.$color-amarillo-oscuro;
   border-radius: 8px;
 

@@ -45,3 +45,30 @@ a button {
   font-weight: 500;
   font-style: oblique;
 }
+
+#carouselExampleIndicators {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.titulo-estilos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  width: 100%;
+  margin: 40px 0 20px 0;
+  padding-left: 30px;
+
+  &::after {
+    content: "";
+    flex: 1;
+    max-width: 80%;
+    /* Evita que la línea llegue hasta el final a menos que sea necesario */
+    height: 2px;
+    background-color: black;
+    align-self: center;
+    /* Centra la línea verticalmente respecto al texto */
+  }
+}

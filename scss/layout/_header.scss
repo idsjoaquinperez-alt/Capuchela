@@ -1,21 +1,28 @@
 @use "../utilities/variables" as v;
 
+/* ESTILOS DEL ENCABEZADO (NAVBAR) */
+
 .navbar-header {
   background-color: v.$color-negro;
 
+  /* Estilos de los enlaces del menú */
   .navbar-nav {
     a {
       text-decoration: none;
+      /* Sin subrayado */
       color: v.$color-amarillo;
+      /* Color amarillo desde variables */
       font-family: v.$font-sansita;
       font-weight: 700;
       font-style: normal;
       font-size: x-large;
 
+      /* Al pasar el mouse por encima */
       &:hover {
         color: v.$color-amarillo-claro;
       }
 
+      /* Estilos para el enlace activo (página actual) */
       &.active,
       &.show,
       &:focus,
@@ -26,11 +33,13 @@
   }
 }
 
+/* Botón del menú hamburguesa en móvil */
 .navbar-toggler {
   border-color: v.$color-amarillo;
   background-color: v.$color-negro;
 }
 
+/* Icono de las tres rayitas */
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23f1c40f' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }

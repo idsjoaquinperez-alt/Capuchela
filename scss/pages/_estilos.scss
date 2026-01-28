@@ -1,6 +1,7 @@
 @use "../utilities/variables" as v;
 @use "../utilities/mixins" as m;
 
+/* PÁGINA DE ESTILOS */
 .estilos {
   padding: 20px;
   max-width: 1100px;
@@ -12,6 +13,7 @@
   }
 }
 
+/* Tarjeta individual de cada estilo de cerveza */
 .estilo-card {
   display: flex;
   align-items: center;
@@ -28,8 +30,10 @@
     border-radius: 10px;
   }
 
+  /* Diseño Responsivo (Móvil) */
   @include m.mobile {
     flex-direction: column;
+    /* Pone la imagen arriba y texto abajo */
     text-align: center;
 
     img {

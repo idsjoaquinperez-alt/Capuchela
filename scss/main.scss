@@ -1,12 +1,16 @@
+/* UTILIDADES */
 @use "utilities/variables";
 @use "utilities/mixins";
 
+/* BASE */
 @use "base/reset";
 @use "base/typography";
 
+/* LAYOUT */
 @use "layout/header";
 @use "layout/footer";
 
+/* PÁGINAS */
 @use "pages/index";
 @use "pages/blog";
 @use "pages/contacto";

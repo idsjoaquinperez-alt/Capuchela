@@ -1,17 +1,41 @@
 @use "../utilities/variables" as v;
 
+/* ESTILOS DEL PIE DE PÁGINA */
 .footer {
   margin-top: 60px;
   background-color: v.$color-negro;
   color: #eee;
   padding: 1.5rem 1rem;
 
+  /* Enlaces dentro del footer */
   a {
     color: v.$color-amarillo;
     text-decoration: none;
   }
 
-  &-social {
+  /* Sección superior del footer */
+  .footer-top {
+    max-width: 900px;
+    margin: 0 auto;
+    /* Centrado horizontal */
+    display: flex;
+    flex-direction: column;
+    /* Elementos uno debajo del otro */
+    align-items: center;
+    gap: 1rem;
+  }
+
+  /* Navegación del footer */
+  .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que bajen si no hay espacio */
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  /* Iconos de redes sociales */
+  .footer-social {
     display: flex;
     gap: 1rem;
 
@@ -22,7 +46,21 @@
       &:hover {
         color: v.$color-amarillo-claro;
         transform: translateY(-10px);
+        /* Pequeño salto al pasar el mouse */
       }
     }
+  }
+
+  /* Texto de copyright al final */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    opacity: 0.7;
+  }
+
+  /* Hover general para enlaces del footer */
+  a:hover {
+    color: v.$color-amarillo;
   }
 }

@@ -1,9 +1,14 @@
+/* MIXINS PARA RESPONSIVE */
+/* Estos bloques nos ayudan a escribir código para celulares más fácil */
+
+/* Para pantallas medianas (Tablets y celulares grandes) */
 @mixin mobile {
   @media (max-width: 768px) {
     @content;
   }
 }
 
+/* Para pantallas muy pequeñas (Celulares chicos) */
 @mixin small {
   @media (max-width: 480px) {
     @content;
