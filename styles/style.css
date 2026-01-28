@@ -1,7 +1,5 @@
 @charset "UTF-8";
-/* ARCHIVO PRINCIPAL */
-/* Aquí importamos todos los "pedacitos" de código SCSS para formar un solo archivo CSS final */
-/* UTILIDADES: Variables (colores, fuentes) y Mixins (funciones reutilizables) */
+/* UTILIDADES */
 /* VARIABLES DE COLORES */
 /* Definimos los colores aquí para usarlos en todo el proyecto. Si cambiamos uno, cambia en todos lados */
 /* VARIABLES DE FUENTES */
@@ -11,15 +9,13 @@
 /* Estos bloques nos ayudan a escribir código para celulares más fácil */
 /* Para pantallas medianas (Tablets y celulares grandes) */
 /* Para pantallas muy pequeñas (Celulares chicos) */
-/* BASE: Estilos generales y reinicio de estilos del navegador */
+/* BASE */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* ARCHIVO PRINCIPAL */
-/* Aquí importamos todos los "pedacitos" de código SCSS para formar un solo archivo CSS final */
-/* UTILIDADES: Variables (colores, fuentes) y Mixins (funciones reutilizables) */
+/* UTILIDADES */
 body {
   background-color: #ffe793;
 }
@@ -42,10 +38,8 @@ h3 {
   font-weight: 500;
 }
 
-/* LAYOUT: Partes comunes de la página (Encabezado y Pie de página) */
-/* ARCHIVO PRINCIPAL */
-/* Aquí importamos todos los "pedacitos" de código SCSS para formar un solo archivo CSS final */
-/* UTILIDADES: Variables (colores, fuentes) y Mixins (funciones reutilizables) */
+/* LAYOUT */
+/* UTILIDADES */
 /* ESTILOS DEL ENCABEZADO (NAVBAR) */
 .navbar-header {
   background-color: #1b1b1b;
@@ -83,9 +77,7 @@ h3 {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23f1c40f' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-/* ARCHIVO PRINCIPAL */
-/* Aquí importamos todos los "pedacitos" de código SCSS para formar un solo archivo CSS final */
-/* UTILIDADES: Variables (colores, fuentes) y Mixins (funciones reutilizables) */
+/* UTILIDADES */
 /* ESTILOS DEL PIE DE PÁGINA */
 .footer {
   margin-top: 60px;
@@ -153,10 +145,8 @@ h3 {
   color: #ffca15;
 }
 
-/* PÁGINAS: Estilos específicos para cada sección del sitio */
-/* ARCHIVO PRINCIPAL */
-/* Aquí importamos todos los "pedacitos" de código SCSS para formar un solo archivo CSS final */
-/* UTILIDADES: Variables (colores, fuentes) y Mixins (funciones reutilizables) */
+/* PÁGINAS */
+/* UTILIDADES */
 .bienvenida {
   display: flex;
   flex-direction: column;
@@ -226,9 +216,7 @@ a button {
   /* Centra la línea verticalmente respecto al texto */
 }
 
-/* ARCHIVO PRINCIPAL */
-/* Aquí importamos todos los "pedacitos" de código SCSS para formar un solo archivo CSS final */
-/* UTILIDADES: Variables (colores, fuentes) y Mixins (funciones reutilizables) */
+/* UTILIDADES */
 /* TITULO BLOG HOME */
 .titulo-blog {
   display: flex;
@@ -350,9 +338,7 @@ a button {
   }
 }
 
-/* ARCHIVO PRINCIPAL */
-/* Aquí importamos todos los "pedacitos" de código SCSS para formar un solo archivo CSS final */
-/* UTILIDADES: Variables (colores, fuentes) y Mixins (funciones reutilizables) */
+/* UTILIDADES */
 /* PÁGINA DE CONTACTO */
 .contacto-titulo {
   text-align: center;
@@ -412,9 +398,7 @@ a button {
     margin: 15px;
   }
 }
-/* ARCHIVO PRINCIPAL */
-/* Aquí importamos todos los "pedacitos" de código SCSS para formar un solo archivo CSS final */
-/* UTILIDADES: Variables (colores, fuentes) y Mixins (funciones reutilizables) */
+/* UTILIDADES */
 /* PÁGINA DE ESTILOS */
 .estilos {
   padding: 20px;
@@ -456,9 +440,7 @@ a button {
   }
 }
 
-/* ARCHIVO PRINCIPAL */
-/* Aquí importamos todos los "pedacitos" de código SCSS para formar un solo archivo CSS final */
-/* UTILIDADES: Variables (colores, fuentes) y Mixins (funciones reutilizables) */
+/* UTILIDADES */
 .titulo-conocenos {
   text-align: center;
   margin: 3rem 0;
@@ -535,5 +517,3 @@ a button {
     text-align: center;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
