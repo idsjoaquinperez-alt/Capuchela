@@ -1,0 +1,84 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.titulo-conocenos {
+    text-align: center;
+    margin: 3rem 0;
+    font-family: v.$font-sansita;
+}
+
+.bloque {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto 4rem auto;
+    padding: 0 20px;
+
+    @include m.mobile {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    img {
+        width: 45%;
+        max-width: 400px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+
+        @include m.mobile {
+            width: 100%;
+            order: 2;
+            /* La imagen va debajo del texto en móvil */
+        }
+    }
+
+    .info-bloque {
+        width: 50%;
+
+        @include m.mobile {
+            width: 100%;
+            order: 1;
+            /* El texto va arriba de la imagen en móvil */
+        }
+
+        h2 {
+            font-family: v.$font-sansita;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: v.$color-amarillo-oscuro;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+/* Alineaciones Específicas */
+.pasado,
+.futuro {
+    .info-bloque {
+        text-align: left;
+
+        @include m.mobile {
+            text-align: center;
+        }
+    }
+}
+
+.presente {
+
+    // La imagen está primero en el HTML, así que el orden flex la pone a la izquierda naturalmente.
+    // Solo necesitamos alinear el texto a la derecha.
+    .info-bloque {
+        text-align: right;
+
+        @include m.mobile {
+            text-align: center;
+        }
+    }
+}

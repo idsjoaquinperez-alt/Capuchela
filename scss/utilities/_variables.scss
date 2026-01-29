@@ -1,12 +1,17 @@
+/* VARIABLES DE COLORES */
+/* Definimos los colores aquí para usarlos en todo el proyecto. Si cambiamos uno, cambia en todos lados */
 $color-negro: #1b1b1b;
 $color-amarillo: #ffca15;
 $color-amarillo-claro: #ffe793;
 $color-amarillo-oscuro: #b88b12;
 $color-blanco: #f8f8f8;
 
+/* VARIABLES DE FUENTES */
 $font-sansita: "Sansita", sans-serif;
 $font-raleway: "Raleway", sans-serif;
 $font-roboto: "Roboto Slab", serif;
 
+/* PUNTOS DE QUIEBRE (RESPONSIVE) */
+/* Tamaños de pantalla para adaptar el diseño a móviles */
 $mobile: 768px;
 $small: 480px;

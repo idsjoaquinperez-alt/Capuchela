@@ -1,158 +1,223 @@
-*{
-    margin: 0;
-    padding: 0;
+@charset "UTF-8";
+/* UTILIDADES */
+/* VARIABLES DE COLORES */
+/* Definimos los colores aquí para usarlos en todo el proyecto. Si cambiamos uno, cambia en todos lados */
+/* VARIABLES DE FUENTES */
+/* PUNTOS DE QUIEBRE (RESPONSIVE) */
+/* Tamaños de pantalla para adaptar el diseño a móviles */
+/* MIXINS PARA RESPONSIVE */
+/* Estos bloques nos ayudan a escribir código para celulares más fácil */
+/* Para pantallas medianas (Tablets y celulares grandes) */
+/* Para pantallas muy pequeñas (Celulares chicos) */
+/* BASE */
+* {
+  margin: 0;
+  padding: 0;
 }
 
-/* Diseño de HEADER*/
+/* UTILIDADES */
+body {
+  background-color: #ffe793;
+}
 
+h1 {
+  color: #1b1b1b;
+  font-family: "Sansita", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+h2 {
+  color: #1b1b1b;
+  font-family: "Sansita", sans-serif;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+}
+
+/* LAYOUT */
+/* UTILIDADES */
+/* ESTILOS DEL ENCABEZADO (NAVBAR) */
 .navbar-header {
   background-color: #1b1b1b;
+  /* Estilos de los enlaces del menú */
 }
-.navbar-nav a
-{
-    text-decoration: none;
-    color: #ffca15;
-    font-family: "Sansita", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size:x-large;
-
+.navbar-header .navbar-nav a {
+  text-decoration: none;
+  /* Sin subrayado */
+  color: #ffca15;
+  /* Color amarillo desde variables */
+  font-family: "Sansita", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: x-large;
+  /* Al pasar el mouse por encima */
 }
-.navbar-header .nav-link:hover {
-    color: #ffe793;
+.navbar-header .navbar-nav a:hover {
+  color: #ffe793;
 }
-
-.navbar-header .navbar-nav .nav-link.active,
-.navbar-header .navbar-nav .nav-link.show,
-.navbar-header .navbar-nav .nav-link:focus,
-.navbar-header .navbar-nav .nav-link:active {
-  color: #ce9e01 !important;
+.navbar-header .navbar-nav a {
+  /* Estilos para el enlace activo (página actual) */
 }
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23f1c40f' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+.navbar-header .navbar-nav a.active, .navbar-header .navbar-nav a.show, .navbar-header .navbar-nav a:focus, .navbar-header .navbar-nav a:active {
+  color: #ce9e01;
 }
 
+/* Botón del menú hamburguesa en móvil */
 .navbar-toggler {
   border-color: #ffca15;
   background-color: #1b1b1b;
 }
 
-/* Diseño BODY*/
-
-body 
-{
-    background-color: #ffe793;
+/* Icono de las tres rayitas */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23f1c40f' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-h1 {
-    color: #1b1b1b;   
-    font-family: "Sansita", sans-serif;
-  font-weight: 800;
-  font-style: italic;
+/* UTILIDADES */
+/* ESTILOS DEL PIE DE PÁGINA */
+.footer {
+  margin-top: 60px;
+  background-color: #1b1b1b;
+  color: #eee;
+  padding: 1.5rem 1rem;
+  /* Enlaces dentro del footer */
+}
+.footer a {
+  color: #ffca15;
+  text-decoration: none;
+}
+.footer {
+  /* Sección superior del footer */
+}
+.footer .footer-top {
+  max-width: 900px;
+  margin: 0 auto;
+  /* Centrado horizontal */
+  display: flex;
+  flex-direction: column;
+  /* Elementos uno debajo del otro */
+  align-items: center;
+  gap: 1rem;
+}
+.footer {
+  /* Navegación del footer */
+}
+.footer .footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  /* Permite que bajen si no hay espacio */
+  gap: 1rem;
+  justify-content: center;
+}
+.footer {
+  /* Iconos de redes sociales */
+}
+.footer .footer-social {
+  display: flex;
+  gap: 1rem;
+}
+.footer .footer-social ion-icon {
+  color: #ffca15;
+  font-size: 2rem;
+}
+.footer .footer-social ion-icon:hover {
+  color: #ffe793;
+  transform: translateY(-10px);
+  /* Pequeño salto al pasar el mouse */
+}
+.footer {
+  /* Texto de copyright al final */
+}
+.footer .footer-bottom {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+.footer {
+  /* Hover general para enlaces del footer */
+}
+.footer a:hover {
+  color: #ffca15;
 }
 
-h2{
-color: #1b1b1b;   font-family: "Sansita", sans-serif;
-  font-weight: 700;
-  font-style: norma
-}
-
-hr {
-  width: 80%;         
-  margin: 40px auto;   
-  border: none;        
-  border-top: 2px solid #1b1b1b;
-}
-
-h3 {
-     font-family: "Roboto Slab", serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
-/* Diseño BIENVENIDA - INICIO*/
-
+/* PÁGINAS */
+/* UTILIDADES */
 .bienvenida {
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
 }
-
 .bienvenida h2 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+  font-size: 3rem;
+  margin-bottom: 10px;
 }
-
 .bienvenida p {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+  .bienvenida {
+    text-align: center;
+  }
+  .bienvenida p {
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 
 button {
-    background-color: #1b1b1b;
-    border-radius: 10px;
-    padding: 5px;
-    margin-top: 10px;
-}
-a button {
-    color: #ffe793;
-    font-family: "Sansita", sans-serif;
-  font-weight: 700;
-  font-style: norma
+  background-color: #1b1b1b;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 10px;
 }
 
+a button {
+  color: #ffe793;
+  font-family: "Sansita", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
 
 .p-bienvenida {
-    font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
+  font-family: "Raleway", sans-serif;
   font-weight: 500;
-  font-style:oblique
+  font-style: oblique;
 }
 
-@media (max-width: 768px) {
-    .bienvenida {
-        text-align: center;
-    }
-
-    .bienvenida p {
-        text-align: center;
-        margin: 0 auto;
-    }
+#carouselExampleIndicators {
+  width: 80%;
+  margin: 0 auto;
 }
-
-
-/* Diseño ESTILOS - INICIO*/
 
 .titulo-estilos {
   display: flex;
   align-items: center;
   gap: 1rem;
-  
   font-size: 2.2rem;
   font-weight: 700;
-
-  width: 100%;              
-  margin: 40px 0 20px 0;    
-  padding-left: 30px;       
+  width: 100%;
+  margin: 40px 0 20px 0;
+  padding-left: 30px;
 }
-
 .titulo-estilos::after {
   content: "";
   flex: 1;
+  max-width: 80%;
+  /* Evita que la línea llegue hasta el final a menos que sea necesario */
   height: 2px;
   background-color: black;
+  align-self: center;
+  /* Centra la línea verticalmente respecto al texto */
 }
 
-#carouselExampleIndicators {
-  width: 80%;
-  margin: 0 auto;   
-}
-
-
-/* Diseño BLOG - INICIO*/
-
+/* UTILIDADES */
+/* TITULO BLOG HOME */
 .titulo-blog {
   display: flex;
   align-items: center;
@@ -160,376 +225,295 @@ a button {
   position: relative;
   margin-left: 30px;
 }
-
-
 .titulo-blog::after {
   content: "";
   flex-grow: 1;
+  max-width: 80%;
+  /* Evita que la línea llegue hasta el final */
   height: 2px;
-  background-color: #000;   
-  display: inline-block;
-  margin-left: 0.5em;  
+  background-color: #000;
+  margin-left: 0.5em;
+  align-self: center;
 }
 
 .cards-blog {
   display: flex;
-  gap: 2rem;          
-  flex-wrap: wrap;      
-  justify-content: center; 
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-top: 2rem;
 }
-.card {
-  background-color: #1b1b1b; 
-  color: #f8f8f8;         
-  border: none;           
-  border-radius: 10px;
-}
-.card-body {
-  flex: 1;                  
-  display: flex;
-  flex-direction: column;
-}
 
-.card h5, 
+.card {
+  background-color: #1b1b1b;
+  color: #f8f8f8;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+.card h5,
 .card h6 {
   color: #f8f8f8;
   font-family: "Sansita", sans-serif;
   font-weight: 700;
-  font-style: normal;
+  margin: 0;
+  /* Eliminar márgenes predeterminados para controlar mejor el espaciado con flex */
 }
-
 .card .btn {
-  background-color: #d4a017; 
+  background-color: #d4a017;
   border: none;
+  margin-top: auto;
+  /* Empuja contra el margen superior automático del h6 para centrar el bloque de texto */
+  width: 100%;
+  align-self: flex-start;
+  /* Alineación al inicio */
 }
-
 .card .btn:hover {
-  background-color: #b88b12; 
+  background-color: #b88b12;
 }
 
-.card-body a.btn {
-  margin-top: auto;       
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* Comenzar desde arriba, usar márgenes para el espaciado */
+  align-items: flex-start;
+  height: 100%;
+  padding: 1.5rem;
+}
+.card-body h6 {
+  margin-top: auto;
+  /* Empuja el texto hacia abajo desde arriba */
+}
+.card-body h5 {
+  /* Márgenes fijos para el título */
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-.btn{
-    font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style:oblique
-}
-
-/* Diseño CONOCENOS - PÁGINA */
-
-section.bloque {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 15px;
-    padding: 20px 40px;        
-    margin-bottom: 30px;       
-}
-
-p.conocenos-texto {
-    font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 1000;
-  font-style:oblique;
-}
-#presente-texto {
-    text-align: right;
-}
-
-section.bloque .texto {
-    flex: 1;
-}
-
-
-section.bloque img {
-    width: 30%;
-    max-width: 280px;
-    height: auto;
-    border-radius: 10px;
-}
-
-.pasado h2 { order: 1; }
-.pasado p  { order: 2; }
-.pasado img { order: 3; }
-
-.presente img { order: 1; }
-.presente p   { order: 2; }
-.presente h2  { order: 3; }
-
-.futuro h2 { order: 1; }
-.futuro p  { order: 2; }
-.futuro img { order: 3; }
-
-@media (max-width: 768px) {
-    section.bloque {
-        flex-direction: column;
-        text-align: center;
-    }
-
-#presente-texto {
-        text-align: center;
-    }
-
-    section.bloque img {
-        width: 70%;
-    }
-
-    .bloque h2 { order: 1; }
-    .bloque p  { order: 2; }
-    .bloque img { order: 3; }
-}
-
-
-/*  ESTILOS - PÁGINA */
-
-.estilos {
-    padding: 20px;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.estilos h1 {
-    margin-bottom: 40px;
-    text-align: center;
-}
-
-.estilo-card {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-
-    background-color: #b88b12;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0px 2px 10px rgba(0,0,0,0.12);
-
-    margin-bottom: 40px;
-}
-
-.estilo-card img {
-    width: 22%;
-    min-width: 150px;
-    border-radius: 10px;
-}
-
-.estilo-card .texto {
-    flex: 1;
-}
-
-.estilo-card h3 {
-    margin-bottom: 10px;
-}
-
-@media (max-width: 768px) {
-    .estilo-card {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .estilo-card img {
-        width: 55%;
-    }
-}
-
-
-/* BLOG - PÁGINA*/
-
-.blog-titulo {
-    margin-bottom: 40px;
-}
-
+/* PÁGINA BLOG */
 .blog-container {
-    width: min(100%, 900px);
-    margin: 0 auto;
-    padding: 20px 15px;
-}
-
-.blog-titulo {
-    margin-bottom: 40px;
-    padding-bottom: 8px;
-    text-align: center;             
-}
-
-.entradablog:first-of-type {
-    border-top: 2px solid #b88b12;   
-    padding-top: 30px;
+  width: min(100%, 900px);
+  margin: 0 auto;
+  padding: 20px 15px;
 }
 
 .entradablog {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 20px;
-    margin-bottom: 50px;
-    padding-bottom: 30px;
-    border-bottom: 2px solid #b88b12; 
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #b88b12;
 }
-
-.blog-texto h3:first-child {
-    color: #b88b12;
-    font-weight: bold;
+.entradablog:first-of-type {
+  border-top: 2px solid #b88b12;
+  padding-top: 30px;
 }
-
-.blog-texto h3:nth-child(2) {
-    margin-bottom: 10px;
+@media (max-width: 768px) {
+  .entradablog {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
-
 
 .blog-img {
-    width: 250px;
-    height: auto;
-    border: 3px solid #b88b12;
-    border-radius: 8px;
-    object-fit: cover;
+  width: 250px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border: 3px solid #b88b12;
+  border-radius: 8px;
 }
-
 @media (max-width: 768px) {
-    .entradablog {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    
-    .blog-img {
-        width: 70%;      
-        max-width: 200px; 
-        margin-top: 15px;
-    }
+  .blog-img {
+    width: 70%;
+    max-width: 200px;
+    margin-top: 15px;
+  }
 }
 
-/* Diseño CONTACTO - PÁGINA */
-
+/* UTILIDADES */
+/* PÁGINA DE CONTACTO */
 .contacto-titulo {
-    text-align: center;
-    margin-bottom: 10px;
-    margin-top: 30px;
-    font-size: 2rem;
-    color: #1b1b1b;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 2rem;
+  color: #1b1b1b;
 }
 
 .contacto-borde {
-    width: 100px;
-    height: 4px;
-    background: #1b1b1b;
-    margin: 0 auto;
-    border-radius: 2px;
-}
-
-.contacto-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;  
-    margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-.contacto-input,
-.contacto-textarea {
-    width: 100%;
-    padding: 12px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    transition: border-color 0.2s;
-}
-
-.contacto-input:focus,
-.contacto-textarea:focus {
-    outline: none;
-    border-color: #1b1b1b;
-}
-
-.contacto-textarea {
-    height: 120px;
-    resize: vertical;
-}
-
-.contacto-button {
-    background: #1b1b1b;
-    color: #ffe793;
-    padding: 12px;
-    border: none;
-    border-radius: 6px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.4s;
-}
-
-.contacto-button:hover {
-    background: #b88b12;
-    color: #1b1b1b;
-}
-
-@media (max-width: 480px) {
-    .contacto-container {
-        margin: 10px;
-        padding: 15px;
-    }
-
-    .contacto-titulo {
-        font-size: 1.7rem;
-    }
-}
-
-/* FOOTER */
-.footer {
-  margin-top: 60px;      
-  background-color: #1b1b1b;
-  color: #eee;
-  font-family: 'Poppins', sans-serif;
-  padding: 1.5rem 1rem;  
-}
-
-.footer a {
-  color: #ffca15;
-  text-decoration: none;
-}
-
-.footer .footer-top {
-  max-width: 900px;      
+  width: 100px;
+  height: 4px;
+  background: #1b1b1b;
   margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* Formulario */
+.contacto-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 1rem;             
+  /* Inputs uno debajo del otro */
+  gap: 15px;
+  margin: 30px 100px;
 }
 
-.footer-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
+/* Campos de texto y área de mensaje */
+.contacto-input,
+.contacto-textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  /* Cuando haces clic en el campo */
+}
+.contacto-input:focus,
+.contacto-textarea:focus {
+  outline: none;
+  border-color: #1b1b1b;
+  /* Cambia color del borde */
 }
 
-.footer-nav a:hover {
-  color: #ffca15;
-}
-
-.footer-social {
-  display: flex;
-  gap: 1rem;
-  font-size: 1.6rem;
-}
-
-
-.footer-bottom {
-  text-align: center;
-  margin-top: 1rem;
-  font-size: 0.85rem;
-  opacity: 0.7;
-}
-
-.footer-social ion-icon {
-  color: #ffca15;
-  font-size: 2rem;
-}
-
-.footer-social ion-icon:hover {
+/* Botón de enviar */
+.contacto-button {
+  background: #1b1b1b;
   color: #ffe793;
-  transform: translateY(-10px);
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.contacto-button:hover {
+  background: #b88b12;
+  color: #1b1b1b;
+}
+
+/* Ajuste para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .contacto-form {
+    margin: 15px;
+  }
+}
+/* UTILIDADES */
+/* PÁGINA DE ESTILOS */
+.estilos {
+  padding: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+.estilos h1 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Tarjeta individual de cada estilo de cerveza */
+.estilo-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background-color: #b88b12;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+  margin-bottom: 40px;
+}
+.estilo-card img {
+  width: 22%;
+  min-width: 150px;
+  border-radius: 10px;
+}
+.estilo-card {
+  /* Diseño Responsivo (Móvil) */
+}
+@media (max-width: 768px) {
+  .estilo-card {
+    flex-direction: column;
+    /* Pone la imagen arriba y texto abajo */
+    text-align: center;
+  }
+  .estilo-card img {
+    width: 55%;
+  }
+}
+
+/* UTILIDADES */
+.titulo-conocenos {
+  text-align: center;
+  margin: 3rem 0;
+  font-family: "Sansita", sans-serif;
+}
+
+.bloque {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto 4rem auto;
+  padding: 0 20px;
+}
+@media (max-width: 768px) {
+  .bloque {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+}
+.bloque img {
+  width: 45%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 768px) {
+  .bloque img {
+    width: 100%;
+    order: 2;
+    /* La imagen va debajo del texto en móvil */
+  }
+}
+.bloque .info-bloque {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .bloque .info-bloque {
+    width: 100%;
+    order: 1;
+    /* El texto va arriba de la imagen en móvil */
+  }
+}
+.bloque .info-bloque h2 {
+  font-family: "Sansita", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #b88b12;
+}
+.bloque .info-bloque p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* Alineaciones Específicas */
+.pasado .info-bloque,
+.futuro .info-bloque {
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .pasado .info-bloque,
+  .futuro .info-bloque {
+    text-align: center;
+  }
+}
+
+.presente .info-bloque {
+  text-align: right;
+}
+@media (max-width: 768px) {
+  .presente .info-bloque {
+    text-align: center;
+  }
 }
